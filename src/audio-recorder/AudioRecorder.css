@@ -1,0 +1,84 @@
+/* src/components/AudioRecorder.css */
+
+.audio-recorder {
+  margin: 50px auto;
+  text-align: center;
+  align-items: center;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid #ececf0;
+  border-radius: 8px;
+}
+
+#waveform {
+  flex: 1;
+}
+
+.pause-btn {
+  background-color: #f1e7fd;
+  color: #500ea5;
+}
+
+.btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mic-btn {
+  background-color: #ececf0;
+}
+.send-btn {
+  background-color: #500ea5;
+  color: white;
+}
+
+.timer {
+  font-size: 12px;
+  color: #818198;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  .recording-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: crimson;
+    animation: bounce-opacity 2s infinite;
+  }
+}
+
+@keyframes bounce-opacity {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.trash-btn{
+    color: rgb(230, 0, 0);
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.pause-icon{
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: #500ea5;
+}
