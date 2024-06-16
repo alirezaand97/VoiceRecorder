@@ -38,7 +38,6 @@ const AudioRecorder = () => {
     });
 
     waveSurferRef.current.on("seeking", function (progress) {
-      pauseAudio();
       let durationTime = Math.floor(waveSurferRef.current.getDuration());
       let seekTime = Math.floor(progress);
       setPlayDuration(durationTime - seekTime);
