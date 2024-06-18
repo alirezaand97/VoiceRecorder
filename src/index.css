@@ -15,3 +15,8 @@ code {
 * {
   box-sizing: border-box;
 }
+.powered {
+  font-size: 14px;
+  color: #5a5a5a;
+  text-align: center;
+}
